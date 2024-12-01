@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Full Screen</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-color: #f0f0f0; /* اختر لون الخلفية المناسب */
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .top-bar, .bottom-bar {
+            position: absolute;
+            width: 100%;
+            background-color: #f0f0f0; /* نفس لون الخلفية لإخفاء المكعب */
+        }
+        .top-bar {
+            top: 0;
+            height: 10%; /* جعل الشريط العلوي بنفس حجم الشريط السفلي */
+        }
+        .bottom-bar {
+            bottom: 0;
+            height: 10%; /* نفس الارتفاع للشريط السفلي */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar"></div>
+        <div class="bottom-bar"></div>
+        <iframe src="https://sketchfab.com/models/24489513c02541619f54a114e14ae85d/embed" allow="autoplay; fullscreen"></iframe>
+    </div>
+
+</body></html>
